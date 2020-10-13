@@ -62,7 +62,8 @@
       }
 
       .screenshots img {
-        height: 513px;
+        width: 100%;
+        border-radius: 16px;
       }
 
       .definition {
@@ -80,13 +81,22 @@
       }
 
       .shelf {
-        background-color: #d7d7d7;
+        background-color: #eee;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 64px;
         padding-bottom: 64px;
+      }
+
+      .shelf-header {
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-top: -32px;
+        margin-bottom: 32px;
+        font-size: .8em;
+        color: #888;
       }
 
       .download img {
@@ -172,6 +182,7 @@
     </div>
     <div class="shelf">
       <div class="container">
+        <div class="shelf-header">OUR PRODUCTS</div>
         <div class="app">
           <div class="app-header">
             <div class="title">
@@ -180,17 +191,17 @@
               </div>
             </div>
           </div>
-        </div>
         <div class="screenshots">
           <a href="https://www.buildbuddy.io/" class="app-name"><img src="buildbuddy.png" alt="BuildBuddy Enterprise Bazel"/></a>
         </div>
-      </div>      
-      <div class="footer">
-        <div class="footer-container">
-          <div class="left">Iteration, Inc</div>
-          <div class="right"><a href="mailto:contact@iterationinc.com">Contact</a><div>
-        </div>
       </div>
+    </div>      
+  </div>
+  <div class="footer">
+    <div class="footer-container">
+      <div class="left">&copy; 2020 Iteration, Inc</div>
+      <div class="right"><a href="mailto:contact@iterationinc.com">Contact</a><div>
     </div>
+  </div>
   </body>
 </html>
